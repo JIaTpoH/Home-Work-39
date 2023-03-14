@@ -1,28 +1,30 @@
 package Food;
 
-public class Drink extends Food {
-  String isCarbonated;
-  String isAlcoholic;
 
-  public Drink(String name, int calories,String isCarbonated, String isAlcoholic) {
+
+public class Drink extends Food {
+  private boolean isCarbonated;
+  private boolean isAlcoholic;
+
+  public Drink(String name, int calories, boolean isCarbonated, boolean isAlcoholic) {
     super(name, calories);
     this.isCarbonated = isCarbonated;
     this.isAlcoholic = isAlcoholic;
   }
 
-  public String isCarbonated() {
+  public boolean isCarbonated() {
     return isCarbonated;
   }
 
-  public String isAlcoholic() {
+  public boolean isAlcoholic() {
     return isAlcoholic;
   }
 
-  public void setCarbonated(String isCarbonated) {
-    this.isCarbonated = String.valueOf(isCarbonated);
+  public void setCarbonated(boolean isCarbonated) {
+    this.isCarbonated = isCarbonated;
   }
 
-  public void setAlcoholic(String isAlcoholic) {
-    this.isAlcoholic = String.valueOf(isAlcoholic);
+  public void setAlcoholic(boolean isAlcoholic) {
+    this.isAlcoholic = isAlcoholic;
   }
 }
