@@ -1,11 +1,20 @@
 package Food;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
+  public static void main(String[] args) throws IOException {
+    // Создаем экземпляр класса Food
+    Food apple = new Food("Яблоко", 52);
 
+    // Вызываем метод eat()
+    apple.consume();
+
+    // Создаем экземпляр класса Drink
+    Drink beer = new Drink("Пиво", 150, true, true);
+
+    // Вызываем метод open()
+    beer.open();
+  }
 }
+
